@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Digital Photo Album | Register</title>
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height:1200px;
+  width:1200px;s
+}
+
+#header {	
+  text-align:center;
+  background:#2962ff;
+  color:white;
+  width:100%;
+  height:60px;  
+  margin-bottom:20px;
+  border-bottom:1px solid #2962ff;
+  border-left:1px solid #2962ff;
+  border-right:1px solid #2962ff;
+}
+a {
+  color:red;
+  text-transform:uppercase;
+}
+.heading {
+	border: 2px solid black;
+	width:450px;
+	height:70px;
+	padding:20px;
+}
+
+#head {	
+  text-align:center;
+  background:#2962ff;
+  color:white;
+  width:100%;
+  height:60px;  
+  font-size:20px;
+  border-bottom:1px solid #2962ff;
+  border-left:1px solid #2962ff;
+  border-right:1px solid #2962ff;
+  float:right;
+}
+
+#regForm  {
+  margin: 50px auto;
+  background-color: white;
+  width: 90%;
+  height:1000px;
+  margin-right:20px auto;
+  min-width: 500px;
+}
+
+#main {	
+  background:white;
+  color:black;
+  width:85%;
+  height:750px;  
+  font-size:20px;
+  border-left:1px solid #2962ff;
+  border-right:1px solid #2962ff;
+  float:right;
+  margin-top:30px;
+  margin-right:70px;
+}
+input, select {
+  background-color: white;
+  padding: 10px;
+  width: 230px;
+  float:right;
+  margin-bottom:30px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #2962ff;
+  border-radius:5px;
+}
+b {
+	float:left;
+	margin:bottom:30px;
+	padding:10px;
+	text-align:left;
+}
+h1 {  
+  text-align:center;
+  color:black;
+  margin:0px;
+}
+li {
+	list-style:none;
+    padding:10px;
+	margin:0px 0 0 0;
+	padding:15px 0 0 10px;
+	float:left;
+	font-size:20px;
+	width:150px;	
+}
+.name {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom:20px;
+}
+.nickname {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+.phone {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+.email {
+  background-color: white;
+  padding: 10px;
+  margin-top:50px;
+  font-size: 17px;
+  margin-bottom:20px;
+}
+.phone {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom:20px;
+}
+.state {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+.gender {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+  margin-top:50px;
+  margin-bottom:20px;
+  margin-bottom:-40px;
+}
+.bio {
+  background-color: white;
+  padding: 10px;
+  height:70px;
+  margin-top:100px;
+  font-size: 17px;
+  height:70px;
+}
+.status {
+  background-color: white;
+  padding: 10px;
+  font-size: 17px;
+}
+.country {
+  background-color: white;
+  padding: 10px;
+  margin-top:50px;
+  font-size: 17px;
+}
+.dob {
+  background-color: white;
+  padding: 10px;
+  margin-top:60px;
+  font-size: 17px;
+}
+.hobbies {
+  background-color: white;
+  padding: 10px;
+  height:70px;
+  margin-top:50px;
+  margin-bottom:-20px;
+  font-size: 17px;
+}
+.address {
+  background-color: white;
+  padding: 10px;
+  margin-top:50px;
+  margin-bottom:-20px;
+  height:70px;
+  font-size: 17px;
+}
+.quote {
+  background-color: white;
+  padding: 10px;
+  height:70px;
+  margin-top:50px;
+  margin-bottom:-20px;
+  font-size: 17px;
+}
+#bio {
+	
+  height:70px;
+}
+#hobbies {
+	
+  height:70px;
+}
+#address {
+	
+  height:70px;
+}
+#quote {
+	
+  height:70px;
+}
+
+h5 {
+  text-align:left;
+  background-color: white;
+  margin-left:20px;
+  margin-top:30px;
+  float:left;
+}
+.tab {
+  text-align:center;	
+  float:left;	
+  padding:20px;
+  margin:2px;
+  height:700px;
+  width:50%px;
+}
+.tab2 {
+  text-align:center;	
+  float:right;	
+  padding:20px;
+  margin:2px;
+  height:700px;
+  width:50%px;
+}
+input.invalid {
+  background-color: #ffdddd;
+  border:2px;
+  border-color:#2962ff;
+}
+button {
+  width:230px;	
+  margin-top:5px;
+  background-color: #2962ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid #2962ff;
+  border-radius:5px;
+  float:right;	
+}
+#butts {
+	width:300%;
+	height:100px;
+	margin-right:10px;
+} 
+#cancel {
+  float:right;	
+  margin-top:-5px;
+  width:230px;	
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid #2962ff;
+  border-radius:5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<center>
+<div class="heading"><a><u>Digital Photo Album</u></a></div>
+</center>
+
+<form id="regForm" action="/action_page.php">
+<div id="header" >
+<li>Faculty</li> <li>Department</li></div>
+<div id="main">
+<div id="head"><p>Profile</p></div>
+<div id="content">
+  <div class="tab">
+  
+  <div class="name">
+    <label for="fullname"><b>Full Name:</b></label>
+	<input placeholder=""  id="fullname" type="text"  name="fullname" required />
+  </div>	
+  <div class="nickname">
+    <label for="nickname"><b>Nick Name:</b></label>
+	<input placeholder="" id="nickname" type="alphabet" name="nickname" />
+  </div>	
+  <div class="email">
+    <label for="email"><b>Email:</b></label>
+    <input placeholder="" id="email" required type="email" name="email" />
+  </div>
+  <div class="phone">
+    <label for="phone"><b>Phone:</b></label>
+    <input placeholder="" id="phone" required type="number" name="phone" />
+  </div>
+  <div class="state">
+    <label for="state"><b>State:</b></label>
+    <select placeholder="" id="state" required name="state" >
+	<option value="1">Bauchi</option>
+	<option value="2">Gombe</option>
+	<option value="3">Kaduna</option>
+	<option value="4">Kano</option>
+	<option value="5">Kogi</option>
+	<option value="6">Borno</option>
+	<option value="7">Jigawa</option>
+	<option value="8">Abia</option>
+	<option value="9">Katsina</option>
+	<option value="10">Kwara</option></select>
+  </div>
+  <div class="gender">
+    <label for="gender"><b>Gender:</b></label>
+	<select placeholder="" id="gender" name="gender" required >
+	<option value="1">Male</option>
+	<option value="2">Female</option></select>
+  </div>
+  <div class="bio">
+    <label for="bio"><b>Biography:</b></label>
+    <input id="bio" placeholder="" type="text" name="biography">
+  </div>
+  
+  </div>
+  
+  <div class="tab2">
+  
+  <div class="status">
+    <label for="status"><b>Marital Status:</b></label>
+	<select placeholder="" id="status" name="status" >
+	<option value="1">Married</option>
+	<option value="2">Single</option>
+	<option value="3">Engaged</option>
+	<option value="4">It's Complicated</option></select>
+  </div>
+  <div class="country">
+    <label for="country"><b>Country:</b></label>
+	<select placeholder="" id="country" name="country" >
+	<option value="1">Nigeria</option>
+	<option value="2">Niger</option></select>
+  </div>
+  <div class="dob">
+    <label for="dob"><b>DOB:</b></label>
+	<input placeholder="" id="dob" name="dob"/>
+  </div>
+  <div class="hobbies">
+    <label for="hobbies"><b>Hobbies:</b></label>
+    <input id="hobbies" placeholder="" name="hobbies"/>
+  </div>
+  <div class="address">
+    <label for="address"><b>Address:</b></label>
+    <input id="address" placeholder="" name="address"/>
+  </div>
+  <div class="quote">
+    <label for="quote"><b>Quote:</b></label>
+    <input id="quote" placeholder="" oninput="this.quote = ''" name="quote"/>
+  </div>
+    <div  id="butts" style="float:right;">
+      <button type="button" id="save" onclick="">Save</button><br/><br/><br/>
+      <button type="button" id="cancel" onclick="">Cancel</button>
+    </div>
+	
+    </div>
+  </div>
+  </div>
+</form>
+</body>
+</html>
